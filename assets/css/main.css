@@ -1977,6 +1977,9 @@ h5.preloader-text::after {
 .offcanvas__wrapper .offcanvas__content .text {
   color: var(--black);
 }
+.offcanvas__content .offcanvas__logo img{
+  width: 200px;
+}
 .offcanvas__wrapper .social-icon {
   margin-top: 40px;
   gap: 16px;

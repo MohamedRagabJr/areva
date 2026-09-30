@@ -29,16 +29,15 @@
 
     <!--<< Critical CSS: Bootstrap + Main (render path) >>-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!--<< Non-critical CSS: loaded async via print trick >>-->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="assets/css/all.min.css"
       media="print"
       onload="this.media = 'all'"
     />
-    <noscript><link rel="stylesheet" href="assets/css/all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/all.min.css" /></noscript> -->
 
     <link
       rel="stylesheet"
@@ -87,6 +86,7 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/nice-select.css"
     /></noscript>
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <!-- Preloader Start -->
@@ -99,7 +99,29 @@
 
     <!-- Back To Top Start -->
     <button id="back-top" class="back-to-top">
-      <i class="fa-regular fa-arrow-up"></i>
+      <svg
+        width="20px"
+        height="20px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M12 20L12 4M12 4L18 10M12 4L6 10"
+            stroke="#1C274C"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+      </svg>
     </button>
 
     <!-- GT MouseCursor Start -->
@@ -107,47 +129,55 @@
     <div class="mouseCursor cursor-inner"></div>
 
     <!-- Offcanvas Area Start -->
-    <div class="fix-area style-offcanvas-2">
-      <div class="header-offcanvas-border">
-        <div class="offcanvas__info">
-          <a href="index.html" class="offcanvas__logo">
-            <img src="assets/img/logo/logo-white.webp" alt="img" />
-          </a>
-          <div class="offcanvas__close">
-            <button>
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <div class="contact-information">
-            <h3>Get In Touch</h3>
-            <ul class="contact-list">
-              <li>
-                <span>Phone</span>
-                <a href="tel:+201094942833">+20 109 494 2833</a>
-              </li>
-              <li>
-                <span>Email</span>
-                <a href="mailto:marketing@arevadevelopment.com">marketing@arevadevelopment.com</a>
-              </li>
-              <li>
-                <span>Address</span>
-                 Based on honululu city, USA
-              </li>
-              <li>
-                <span>Follow us</span>
-                <div class="social-icon">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="offcanvas__wrapper">
-            <div class="offcanvas__content">
-              <div class="mobile-menus fix"></div>
+    <div class="fix-area">
+      <div class="offcanvas__info style-2">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img
+                    loading="lazy"
+                    src="assets/img/logo/logo-white.webp"
+                    alt="img"
+                  />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button>
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                        fill="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
             </div>
+            <p class="text d-none d-xl-block">
+              Nullam dignissim, ante scelerisque the is euismod fermentum odio
+              sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
+              a imperdiet risus.
+            </p>
+            <div class="mobile-menu fix mb-3"></div>
           </div>
         </div>
       </div>
@@ -199,7 +229,51 @@
                         <li class="has-dropdown">
                           <a href="javascript:void(0)">
                             Service
-                            <i class="fas fa-angle-right"></i>
+                            <svg
+                              width="16px"
+                              height="16px"
+                              viewBox="-4.5 0 20 20"
+                              version="1.1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              fill="#fff"
+                              stroke="#fff"
+                            >
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></g>
+                              <g id="SVGRepo_iconCarrier">
+                                <title>arrow_right [#336]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g
+                                  id="Page-1"
+                                  stroke="none"
+                                  stroke-width="1"
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                >
+                                  <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-305.000000, -6679.000000)"
+                                    fill="#fff"
+                                  >
+                                    <g
+                                      id="icons"
+                                      transform="translate(56.000000, 160.000000)"
+                                    >
+                                      <path
+                                        d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                                        id="arrow_right-[#336]"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
                           </a>
                           <ul class="submenu">
                             <li><a href="service.html">Services</a></li>
@@ -241,8 +315,31 @@
               class="header-right d-flex justify-content-end align-items-center mt-0"
             >
               <a href="contact.html" class="theme-btn"
-                >Get in Touch <i class="fa-solid fa-arrow-up-right"></i
-              ></a>
+                >Get in Touch
+                <svg
+                  width="32px"
+                  height="32px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7 17L17 7M17 7H8M17 7V16"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
               <div class="header__hamburger d-xl-none my-auto">
                 <div class="sidebar__toggle">
                   <img loading="lazy" src="assets/img/bar.svg" alt="img" />
@@ -278,16 +375,36 @@
                     <span class="sub-text">Estates</span>
                   </h1>
                   <p class="wow fadeInUp" data-wow-delay=".5s">
-                    We’re a team of strategic working globally with largest
-                    Our expert agents bring vision, integrity, and unmatched
-                    market knowledge to every transaction.
+                    We’re a team of strategic working globally with largest Our
+                    expert agents bring vision, integrity, and unmatched market
+                    knowledge to every transaction.
                   </p>
                   <a
                     href="project.html"
                     class="video-btn wow fadeInUp"
                     data-wow-delay=".7s"
                   >
-                    <span class="icon"><i class="fa-solid fa-play"></i></span>
+                    <span class="icon"
+                      ><svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                            fill="#1C274C"
+                          ></path>
+                        </g></svg
+                    ></span>
                     <span class="text">View Properties</span>
                   </a>
                 </div>
@@ -414,10 +531,7 @@
                     <div class="row g-4 wow fadeInUp" data-wow-delay=".7s">
                       <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="skill-counter pl-none">
-                          <img
-                            src="assets/img/icon/reputation.png"
-                            alt="img"
-                          />
+                          <img src="assets/img/icon/reputation.png" alt="img" />
                           <div class="content">
                             <h2><span class="count">98</span>%</h2>
                             <p>Client Satisfaction</p>
@@ -435,7 +549,10 @@
                       </div>
                       <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="skill-counter">
-                          <img src="assets/img/icon/average-revenue-per-user.png" alt="img" />
+                          <img
+                            src="assets/img/icon/average-revenue-per-user.png"
+                            alt="img"
+                          />
                           <div class="content">
                             <h2><span class="count">79</span>%</h2>
                             <p>Avg. ROI</p>
@@ -498,10 +615,53 @@
                     <div class="about-btn wow fadeInUp" data-wow-delay=".7s">
                       <a href="about.html" class="theme-btn"
                         >explore listings
-                        <i class="fa-solid fa-arrow-up-right"></i
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g></svg
                       ></a>
                       <a href="contact.html" class="theme-btn"
-                        >contact us <i class="fa-solid fa-arrow-up-right"></i
+                        >contact us
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g></svg
                       ></a>
                     </div>
                   </div>
@@ -543,7 +703,29 @@
                         </p>
                       </div>
                       <a href="service-details.html" class="arrow-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay=".5s">
@@ -558,7 +740,29 @@
                         </p>
                       </div>
                       <a href="service-details.html" class="arrow-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay=".7s">
@@ -573,7 +777,29 @@
                         </p>
                       </div>
                       <a href="service-details.html" class="arrow-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </li>
                     <li class="wow fadeInUp" data-wow-delay=".3s">
@@ -588,7 +814,29 @@
                         </p>
                       </div>
                       <a href="service-details.html" class="arrow-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#888888"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </li>
                   </ul>
@@ -1178,7 +1426,29 @@
                         </h3>
                       </div>
                       <a href="project-details.html" class="circle-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -1196,7 +1466,29 @@
                         </h3>
                       </div>
                       <a href="project-details.html" class="circle-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -1217,7 +1509,29 @@
                       </h3>
                     </div>
                     <a href="project-details.html" class="circle-icon">
-                      <i class="fa-solid fa-arrow-up-right"></i>
+                      <svg
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M7 17L17 7M17 7H8M17 7V16"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -1238,7 +1552,29 @@
                         </h3>
                       </div>
                       <a href="project-details.html" class="circle-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -1256,7 +1592,29 @@
                         </h3>
                       </div>
                       <a href="project-details.html" class="circle-icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M7 17L17 7M17 7H8M17 7V16"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </g>
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -1265,10 +1623,54 @@
             </div>
             <div class="project-btn-all wow fadeInUp" data-wow-delay=".3s">
               <a href="project.html" class="theme-btn"
-                >view all works <i class="fa-solid fa-arrow-up-right"></i
+                >view all works
+                <svg
+                  width="32px"
+                  height="32px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7 17L17 7M17 7H8M17 7V16"
+                      stroke="#888888"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g></svg
               ></a>
               <a href="contact.html" class="theme-btn"
-                >contact with me <i class="fa-solid fa-arrow-up-right"></i
+                >contact with me
+                <svg
+                  width="32px"
+                  height="32px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7 17L17 7M17 7H8M17 7V16"
+                      stroke="#888888"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g></svg
               ></a>
             </div>
           </div>
@@ -1329,7 +1731,27 @@
               href="https://www.youtube.com/watch?v=-sAOWhvheK8"
               class="video-btn ripple video-popup"
             >
-              <span class="icon"><i class="fa-solid fa-play"></i></span>
+              <span class="icon"
+                ><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                      fill="#1C274C"
+                    ></path>
+                  </g></svg
+              ></span>
             </a>
           </div>
         </section>
@@ -1346,7 +1768,29 @@
                 </h2>
               </div>
               <a href="news-grid.html" class="theme-btn"
-                >view all news <i class="fa-solid fa-arrow-up-right"></i
+                >view all news
+                <svg
+                  width="32px"
+                  height="32px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7 17L17 7M17 7H8M17 7V16"
+                      stroke="#888888"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g></svg
               ></a>
             </div>
             <div class="tp-service-pin">
@@ -1463,8 +1907,6 @@
             </div>
           </div>
         </section>
-
-        
 
         <!-- contact Section Start -->
         <section class="faq-section fix section-padding section-bg">
@@ -1606,11 +2048,33 @@
                           ></textarea>
                         </div>
                       </div>
-                      
+
                       <div class="col-lg-12">
                         <button type="submit" class="theme-btn">
                           send message
-                          <i class="fa-solid fa-arrow-up-right"></i>
+                          <svg
+                            width="32px"
+                            height="32px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                d="M7 17L17 7M17 7H8M17 7V16"
+                                stroke="#000000"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </g>
+                          </svg>
                         </button>
                       </div>
                     </div>
@@ -1687,7 +2151,9 @@
               </a>
               <div class="content wow fadeInUp" data-wow-delay=".3s">
                 <p>Ready to Find Your Property?</p>
-                <h2 class="wt-about-title">FIND YOUR <span>DREAM HOME</span></h2>
+                <h2 class="wt-about-title">
+                  FIND YOUR <span>DREAM HOME</span>
+                </h2>
               </div>
               <div class="footer-link-area wow fadeInUp" data-wow-delay=".5s">
                 <div class="row g-4">
@@ -1734,7 +2200,11 @@
                   <div class="col-xl-2 col-lg-6 col-md-6">
                     <div class="link-item location-text">
                       <h3 class="widget-title">location</h3>
-                      <p><strong>Sheraton:</strong> Heliopolis, Bldg 10, Al Moltaqa Al Araby st.<br /><strong>New Cairo:</strong> Plot 158, 90th North, New Cairo, Egypt</p>
+                      <p>
+                        <strong>Sheraton:</strong> Heliopolis, Bldg 10, Al
+                        Moltaqa Al Araby st.<br /><strong>New Cairo:</strong>
+                        Plot 158, 90th North, New Cairo, Egypt
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1751,19 +2221,100 @@
                 <div class="icon-items-area">
                   <div class="icon-items">
                     <a href="#" class="icon">
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="#888888"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                            fill="#888888"
+                          ></path>
+                        </g>
+                      </svg>
                     </a>
                     <a href="#">Facebook</a>
                   </div>
                   <div class="icon-items">
                     <a href="#" class="icon">
-                      <i class="fa-brands fa-twitter"></i>
+                      <svg
+                        fill="#888888"
+                        height="24px"
+                        width="24px"
+                        version="1.1"
+                        id="XMLID_3_"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        stroke="#888888"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g id="social-youtube">
+                            <g id="Lozenge">
+                              <g>
+                                <path
+                                  d="M23.7,7.4c0,0-0.3-1.5-0.9-2.3c-0.9-0.9-2-0.8-2.4-0.9C17.1,4,12,4,12,4l0,0c0,0-5.1,0-8.4,0.2c-0.4,0.1-1.5,0.1-2.4,1 C0.5,5.9,0.3,7.5,0.3,7.5S0,9.4,0,11.2v1.7c0,1.9,0.3,3.7,0.3,3.7s0.3,1.5,0.9,2.3c0.9,0.9,2.1,0.8,2.7,0.9C5.7,20,12,20,12,20 s5.1,0,8.4-0.2c0.4-0.1,1.5-0.1,2.4-1c0.7-0.7,0.9-2.3,0.9-2.3s0.3-1.9,0.3-3.6v-1.7C24,9.3,23.7,7.4,23.7,7.4z M9.3,15.1V8.4 l6.9,3.4L9.3,15.1z"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
                     </a>
                     <a href="#">Twitter</a>
                   </div>
                   <div class="icon-items">
                     <a href="#" class="icon">
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="#888888"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                            fill="#888888"
+                          ></path>
+                          <path
+                            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                            fill="#888888"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                            fill="#888888"
+                          ></path>
+                        </g>
+                      </svg>
                     </a>
                     <a href="#">Linkedin</a>
                   </div>
@@ -1821,6 +2372,7 @@
     <script defer src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/fa-svg-replacer.js"></script>
     <!-- === SERVICE WORKER: Long-term asset caching for GitHub Pages === -->
     <script>
       if ("serviceWorker" in navigator) {
@@ -1832,6 +2384,4 @@
       }
     </script>
   </body>
-
-  <!-- Mirrored from ex-coders.com/html/Areva/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 23:41:26 GMT -->
 </html>
