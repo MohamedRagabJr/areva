@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <!--<< Header Area >>-->
 
@@ -2024,6 +2024,15 @@
     <script defer src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script defer src="assets/js/main.js"></script>
+      <!-- === SERVICE WORKER: Long-term asset caching for GitHub Pages === -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .catch(function(err) { console.log('SW registration failed:', err); });
+        });
+      }
+    </script>
   </body>
 
   <!-- Mirrored from ex-coders.com/html/protix/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jan 2026 23:41:26 GMT -->

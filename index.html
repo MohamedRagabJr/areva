@@ -2006,5 +2006,14 @@
     <script defer src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script defer src="assets/js/main.js"></script>
+      <!-- === SERVICE WORKER: Long-term asset caching for GitHub Pages === -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .catch(function(err) { console.log('SW registration failed:', err); });
+        });
+      }
+    </script>
   </body>
 </html>
