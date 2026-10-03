@@ -2873,7 +2873,7 @@ h5.preloader-text::after {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url("../img/project/slide1.webp");
+  background-image: url("../img/project/p1.webp");
   background-size: cover;
   background-position: center center;
   transform: scale(1.03);
