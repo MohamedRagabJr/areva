@@ -32,9 +32,11 @@
       rel="stylesheet"
       href="assets/css/bootstrap.min.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
-    <noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css" /></noscript>
+    <noscript
+      ><link rel="stylesheet" href="assets/css/bootstrap.min.css"
+    /></noscript>
     <!--<< All Min Css >>-->
     <link
       rel="stylesheet"
@@ -97,7 +99,7 @@
       rel="stylesheet"
       href="assets/css/main.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript><link rel="stylesheet" href="assets/css/main.css" /></noscript>
     <!-- === PERFORMANCE: font-display swap === -->
@@ -108,28 +110,164 @@
     </style>
     <!-- === PERFORMANCE: Critical above-the-fold CSS (inlined) === -->
     <style>
-      :root{--body:#060606;--black:#000;--white:#fff;--theme:#b4a086;--header:#fff;--text:#b5b5b5;--border:#fcfcfc;--bg:#1a1a1a}
-      *,*::before,*::after{box-sizing:border-box}
-      body{margin:0;padding:0;overflow-x:hidden;background-color:var(--body);font-family:"Kanit",sans-serif;color:var(--text)}
-      img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-style:none;padding:0;margin:0}
-      .container{width:100%;padding-right:12px;padding-left:12px;margin-right:auto;margin-left:auto}
-      @media(min-width:576px){.container{max-width:540px}}@media(min-width:768px){.container{max-width:720px}}
-      @media(min-width:992px){.container{max-width:960px}}@media(min-width:1200px){.container{max-width:1140px}}
-      @media(min-width:1400px){.container{max-width:1320px}}
-      .d-none{display:none!important}.fix{overflow:hidden}
-      .preloader{position:fixed;inset:0;z-index:99999;background:#060606;display:flex;align-items:center;justify-content:center;flex-direction:column}
-      .preloader svg{position:absolute;inset:0;width:100%;height:100%}
-      .preloader-text{position:relative;z-index:1;color:#fff;font-family:"Big Shoulders Display",sans-serif;font-size:2rem;letter-spacing:.1em;text-transform:uppercase}
-      header{position:fixed;top:0;left:0;right:0;z-index:999}
-      #header-sticky{width:100%;transition:background .3s ease,padding .3s ease}
-      .header-main{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-      .header-logo img{height:40px}
-      #smooth-wrapper{will-change:transform}
-      .back-to-top{position:fixed;bottom:30px;right:30px;z-index:99;width:45px;height:45px;border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;border:none;background:var(--theme)}
-      .mouseCursor{position:fixed;pointer-events:none;z-index:10000;border-radius:50%}
-      .cursor-outer{width:30px;height:30px;border:2px solid rgba(199,174,134,.5)}
-      .cursor-inner{width:8px;height:8px;background:#c7ae86;transform:translate(-50%,-50%)}
-    </style>  </head>
+      :root {
+        --body: #060606;
+        --black: #000;
+        --white: #fff;
+        --theme: #b4a086;
+        --header: #fff;
+        --text: #b5b5b5;
+        --border: #fcfcfc;
+        --bg: #1a1a1a;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: var(--body);
+        font-family: "Kanit", sans-serif;
+        color: var(--text);
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 1400px) {
+        .container {
+          max-width: 1320px;
+        }
+      }
+      .d-none {
+        display: none !important;
+      }
+      .fix {
+        overflow: hidden;
+      }
+      .preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background: #060606;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .preloader svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .preloader-text {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        font-family: "Big Shoulders Display", sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      #header-sticky {
+        width: 100%;
+        transition:
+          background 0.3s ease,
+          padding 0.3s ease;
+      }
+      .header-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+      }
+      .header-logo img {
+        height: 40px;
+      }
+      #smooth-wrapper {
+        will-change: transform;
+      }
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background: var(--theme);
+      }
+      .mouseCursor {
+        position: fixed;
+        pointer-events: none;
+        z-index: 10000;
+        border-radius: 50%;
+      }
+      .cursor-outer {
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgba(199, 174, 134, 0.5);
+      }
+      .cursor-inner {
+        width: 8px;
+        height: 8px;
+        background: #c7ae86;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
   <body>
     <!-- Preloader Start -->
     <div class="preloader">
@@ -738,6 +876,47 @@
           </div>
         </footer>
       </div>
+    </div>
+    <div class="site-side-cta" aria-label="Quick contact">
+      <a
+        class="site-side-cta__btn site-side-cta__btn--call"
+        href="tel:+201094942833"
+        aria-label="Call us"
+      >
+        <span class="site-side-cta__icon" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span class="site-side-cta__label">Call</span>
+      </a>
+      <a
+        class="site-side-cta__btn site-side-cta__btn--whatsapp"
+        href="https://wa.me/201094942833"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+        <span class="site-side-cta__icon" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.5 3.5A11 11 0 0 0 3.2 17.7L2 22l4.4-1.1A11 11 0 1 0 20.5 3.5zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.6.7.7-2.5-.2-.3A9 9 0 1 1 12 20.5zm5.1-6.7c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.7.2-.8.9-1 .1c-.1.2-.5.8-.6 1s-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5c.1-.2.1-.3 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3 .1.2 2 3.1 2.9 2.6 3.4 2.9 1.2.4 1.9.2 1.4-1.1 1.6-2.1.2-.9.1-1z"
+            ></path>
+          </svg>
+        </span>
+        <span class="site-side-cta__label">WhatsApp</span>
+      </a>
     </div>
 
     <!--<< All JS Plugins >>-->
