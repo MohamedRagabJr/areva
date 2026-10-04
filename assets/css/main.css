@@ -8588,3 +8588,109 @@ h5.preloader-text::after {
     font-size: 18px;
   }
 }
+
+/*---------------------------------------
+  Career Page Styles
+---------------------------------------*/
+.career-form-section,
+.career-jobs-section {
+  background-color: #f5ede7;
+}
+
+/* Form inputs */
+.career-input {
+  width: 100%;
+  padding: 14px 22px;
+  border: 1.5px solid rgba(180, 160, 134, 0.4);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--body, #060606);
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-input::placeholder {
+  color: #999;
+}
+
+.career-input:focus {
+  border-color: #b4a086;
+  box-shadow: 0 0 0 3px rgba(180, 160, 134, 0.15);
+}
+
+/* File upload */
+.career-file-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+}
+
+.career-file-input {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Submit button */
+.career-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background-color: #b4a086;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.career-submit-btn:hover {
+  background-color: #9a8870;
+  transform: translateY(-2px);
+}
+
+/* Job listing rows */
+.career-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.career-job-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1.5px dashed rgba(180, 160, 134, 0.55);
+  border-radius: 50px;
+  margin-bottom: 14px;
+  background: transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.career-job-item:hover {
+  background-color: rgba(180, 160, 134, 0.1);
+  border-color: #b4a086;
+}
+
+.career-job-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.career-job-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--body, #060606);
+}
