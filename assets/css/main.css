@@ -56,7 +56,7 @@
   color: var(--header);
 }
 .white-theme .hero-1 .hero-content .social-link a:hover {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .build-impactful-wrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -74,7 +74,7 @@
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .award-wrapper-4 .award-content h2 {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .section-title .sec-sub {
   color: var(--theme);
@@ -95,7 +95,7 @@
   color: #fff;
 }
 .white-theme .about-wrapper .about-left-items .skill-counter .content h2 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .theme-btn {
   background:
@@ -176,7 +176,7 @@
   .client-info-items
   .info-content
   span {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .project-box-items .thumb .content h3 a {
   color: #fff;
@@ -193,21 +193,21 @@
 }
 .white-theme .pricing-box-items.style-2 .pricing-header span {
   background: rgba(0, 0, 0, 0.1);
-  color: #000;
+  color: #16212B;
 }
 .white-theme .pricing-box-items .circle-icon {
   background: rgba(0, 0, 0, 0.1);
-  color: #000;
+  color: #16212B;
 }
 .white-theme .pricing-box-items:hover {
   border: 1px solid var(--theme);
   background: var(--theme);
 }
 .white-theme .pricing-box-items:hover h2 {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .pricing-box-items:hover .circle-icon {
-  background: #000 !important;
+  background: #16212B !important;
   color: var(--black) !important;
 }
 .white-theme .pricing-box-items.active {
@@ -215,17 +215,17 @@
   background: var(--theme);
 }
 .white-theme .pricing-box-items.active h2 {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .pricing-box-items.active .circle-icon {
-  background: #000 !important;
+  background: #16212B !important;
   color: var(--black) !important;
 }
 .white-theme .pricing-box-items .pricing-header h2 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .pricing-box-items .pricing-header p {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .video-wrapper .video .video-btn {
   background-color: #fff;
@@ -258,30 +258,30 @@
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .footer-bottom p span {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .skill-box-items-2 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #f5f5f5;
 }
 .white-theme .build-impactful-section .build-text span {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .skill-section-2 p a {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .choose-us-box-items-2 {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   background-color: transparent;
 }
 .white-theme .award-section-2 .circle-box .icon {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .project-area-one .project-wrapper .card-items {
   background: transparent;
 }
 .white-theme .section-title h2 span {
-  color: #fff;
+  color: #16212B;
 }
 .white-theme .header-2 .container {
   background:
@@ -309,18 +309,18 @@
   .budget-button
   .budget-btn {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .faq-items .accordion-box .block {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .faq-items .accordion-box .block .acc-btn.active {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .faq-items .accordion-box .block .acc-btn .icon {
   position: absolute;
   border-radius: 50%;
-  color: #000 !important;
+  color: #16212B !important;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .news-box-items-2 .content h3 {
@@ -328,7 +328,7 @@
 }
 .white-theme .news-box-items-2 .content .client-info-area .circle-icon {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .footer-wrapper-2 .content p {
   color: #fff !important;
@@ -337,10 +337,10 @@
   color: #fff !important;
 }
 .white-theme .footer-bottom-2 .footer-bottom-wrapper-2 p span {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .footer-bottom-2 .footer-bottom-wrapper-2 ul li a:hover {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .about-wrapper-3 .about-image {
   display: none;
@@ -351,20 +351,20 @@
 }
 .white-theme .section-title-2 .sec-sub {
   background: rgba(191, 247, 71, 0.1);
-  color: #000;
+  color: #16212B;
 }
 .white-theme .about-wrapper-3 .about-counter-2 {
   background: #f5f5f5;
 }
 .white-theme .about-wrapper-3 .about-counter-2 .counter-item .content h3 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .service-list-items-3 li {
   background: #f5f5f5;
 }
 .white-theme .service-list-items-3 li .arrow-icon {
   border: 1.5px solid rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: #16212B;
 }
 .white-theme .service-list-items-3 li .arrow-icon:hover {
   color: #fff;
@@ -378,7 +378,7 @@
 .white-theme .testimonial-section-3 .array-button .array-next,
 .white-theme .array-prev {
   border: 1.5px solid rgba(0, 0, 0, 0.2) !important;
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .contact-section-3 h2 {
   color: #fff;
@@ -387,7 +387,7 @@
   color: #fff;
 }
 .white-theme .news-section-3 h2 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .news-style-item-3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -428,10 +428,10 @@
   color: #fff !important;
 }
 .white-theme .about-section-4 .section-title h2 {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .award-section-4 .section-title h2 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .award-wrapper-4 .award-content .award-list-items span {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -440,13 +440,13 @@
   background: #f5f5f5;
 }
 .white-theme .testimonial-section-4 h2 {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .footer-wrapper-4 {
   background: transparent;
 }
 .white-theme .footer-bottom-4 .footer-bottom-wrapper-4 p span {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .gt-horizontal-portfolio__content-title a {
   color: #fff;
@@ -472,7 +472,7 @@
   color: #fff;
 }
 .white-theme .gt-vertical-portfolio .theme-btn:hover {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .gt-vertical-portfolio .hero-content h6 {
   color: #fff;
@@ -481,7 +481,7 @@
   color: #fff;
 }
 .white-theme .about-inner-wrapper .about-head h1 {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .about-counter-box {
   background-color: #f5f5f5;
@@ -494,13 +494,13 @@
 }
 .white-theme .choose-us-box-items-2 .choose-content .arrow-icon {
   border: 1.5px solid rgba(0, 0, 0, 0.2);
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .faq-inner-page-wrapper .accordion-box .block .acc-btn.active {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .faq-inner-page-wrapper .accordion-box .block .acc-btn .icon {
-  color: #000 !important;
+  color: #16212B !important;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .faq-inner-page-wrapper .accordion-box .block {
@@ -509,7 +509,7 @@
 .white-theme .error-wrapper .error-btn .theme-btn.style-2 {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: transparent;
-  color: #000;
+  color: #16212B;
 }
 .white-theme .project-inner-page-wrapper .project-inner-page-box {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -520,7 +520,7 @@
   .project-inner-page-box
   .content
   .arrow-icon {
-  color: #000;
+  color: #16212B;
 }
 .white-theme
   .project-inner-page-wrapper
@@ -533,14 +533,14 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .white-theme .page-nav-wrap ul li.active .page-numbers {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .page-nav-wrap ul li .page-numbers:hover {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .section-title-area .array-button .array-next {
   border: 1.5px solid rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: #16212B;
 }
 .white-theme .news-standard-box-items {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -613,7 +613,7 @@
   .homemenu-thumb
   .demo-button
   .gt-theme-btn {
-  color: #000;
+  color: #16212B;
 }
 .white-theme .header-2.header-style-2 .main-menu ul li .submenu li a {
   color: #fff;
@@ -623,7 +623,7 @@
 }
 @media (max-width: 1199px) {
   .white-theme .hero-2 .hero-content h1 {
-    color: #000;
+    color: #16212B;
   }
 }
 .white-theme .header-2 .header-right .theme-btn:hover {
@@ -671,7 +671,7 @@
   display: block !important;
 }
 .white-theme .gallery-wrapper .gallery-item-4 .gallery-image .arrow-icon {
-  color: #000 !important;
+  color: #16212B !important;
 }
 .white-theme .header-white-style .main-menu {
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
