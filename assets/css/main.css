@@ -1,4 +1,99 @@
 @charset "UTF-8";
+/* ==========================================================================
+   Font-display: swap overrides for Big Shoulders Display (cdnfonts.com)
+   cdnfonts does not support ?display=swap, so we re-declare all weights here
+   with font-display: swap to prevent invisible text during font load (FCP).
+   ========================================================================== */
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Regular.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Thin.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay[wght].woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Light.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Medium.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-SemiBold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Bold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-ExtraBold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Big Shoulders Display"),
+    url("https://fonts.cdnfonts.com/s/54834/BigShouldersDisplay-Black.woff")
+      format("woff");
+}
 
 /*======================================================================================
   >> TABLE OF CONTENTS <<
@@ -50,10 +145,10 @@
   background-color: var(--header);
   color: #fff;
 }
-.white-theme .news-details-area .single-news-post .news-content .ext{
+.white-theme .news-details-area .single-news-post .news-content .ext {
   color: var(--head-color);
 }
-.white-theme .section-bg{
+.white-theme .section-bg {
   background-color: #f3f5f6;
 }
 .white-theme .hero-content .theme-btn:hover {
@@ -522,7 +617,7 @@
 .white-theme .news-content h3,
 .white-theme .news-details-area .single-news-post h4,
 .news-details-area .single-news-post .news-list .news-item .content h5,
-.news-details-area .single-news-post .news-list .news-item .content h6{
+.news-details-area .single-news-post .news-list .news-item .content h6 {
   color: var(--head-color);
 }
 .white-theme .page-nav-wrap ul li .page-numbers:hover {
@@ -550,8 +645,8 @@
   background: var(--head-color);
 }
 .white-theme .wid-title h3,
-.white-theme .contact-form-box h3{
-    color: var(--theme);
+.white-theme .contact-form-box h3 {
+  color: var(--theme);
 }
 .white-theme .main-sidebar .single-sidebar-widget .search-widget form input {
   background-color: #fff;
@@ -5548,12 +5643,12 @@ h5.preloader-text::after {
   align-items: center;
   gap: 16px;
 }
-.main-sidebar .single-sidebar-widget .recent-post-area .thumb img{
-      width: 300px;
-    height: 100px;
+.main-sidebar .single-sidebar-widget .recent-post-area .thumb img {
+  width: 300px;
+  height: 100px;
   object-fit: cover;
 }
-.main-sidebar .single-sidebar-widget .recent-post-area .content h3 a{
+.main-sidebar .single-sidebar-widget .recent-post-area .content h3 a {
   color: var(--theme);
 }
 @media (max-width: 1199px) {
@@ -6289,7 +6384,10 @@ h5.preloader-text::after {
   color: #111 !important;
   text-decoration: none !important;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
-  transition: transform 0.22s ease, filter 0.22s ease, box-shadow 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    filter 0.22s ease,
+    box-shadow 0.22s ease;
 }
 .site-side-cta__btn:hover,
 .site-side-cta__btn:focus-visible {
@@ -6349,7 +6447,10 @@ h5.preloader-text::after {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
 }
 .site-side-cta__label::after {
@@ -6386,4 +6487,5 @@ h5.preloader-text::after {
   }
   .site-side-cta__label {
     display: none;
-  }}
+  }
+}
