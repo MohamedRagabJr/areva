@@ -1915,6 +1915,9 @@ h5.preloader-text::after {
   width: 100%;
   margin: 0;
 }
+.header-main .header-logo2 img {
+  width: 150px;
+}
 .header-main .main-menu ul li .submenu li a {
   position: relative;
   z-index: 11;
@@ -3465,6 +3468,12 @@ h5.preloader-text::after {
   }
 }
 @media (max-width: 767px) {
+  .hero-2{
+    height: 50vh;
+  }
+  .hero-2 .hero-content {
+    display: none;
+  }
   .hero-2 .hero-content h1 {
     font-size: 60px;
   }
