@@ -64,6 +64,9 @@
 .white-theme .footer-bottom-4 {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+.white-theme .career-form-section {
+  background-color: #fff;
+}
 .white-theme .header-main .main-menu ul li .has-homemenu {
   background-color: #fff;
 }
@@ -7101,6 +7104,7 @@ h5.preloader-text::after {
 .news-grid-section1 {
   padding: 160px 0 120px;
 }
+
 .news-grid-section1 h1 {
   color: var(--white);
   font-size: 100px;
