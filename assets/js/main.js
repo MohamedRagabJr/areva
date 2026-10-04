@@ -198,7 +198,6 @@
     /* ================================
         Mouse Cursor Animation Js Start
     ================================ */
-
     if ($(".mouseCursor").length > 0) {
       function itCursor() {
         var myCursor = jQuery(".mouseCursor");
@@ -735,9 +734,16 @@
       setTheme(newTheme);
     });
 
-    // Always load light first on page open
-    $(document).ready(function () {
-      setTheme("white-theme");
+    // Restore saved theme on page load (default: white-theme)
+    var savedTheme = localStorage.getItem("areva-theme") || "white-theme";
+    setTheme(savedTheme);
+
+    // Save to localStorage whenever user toggles
+    $(".quick-switch").off("click").on("click", function () {
+      const isDark = $("html").hasClass("dark-theme");
+      const newTheme = isDark ? "white-theme" : "dark-theme";
+      setTheme(newTheme);
+      localStorage.setItem("areva-theme", newTheme);
     });
   }); // End Document Ready Function
 
