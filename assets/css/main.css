@@ -19,9 +19,9 @@
   --body: #060606;
   --black: #000;
   --white: #fff;
-  --theme: #c7ae86;
+  --theme: #d8be96;
   --header: #fff;
-  --text: #888;
+  --text: #b5b5b5;
   --border: #fcfcfc;
   --bg: #1a1a1a;
   --bg2: #030523;
@@ -33,12 +33,11 @@
   --body: #000;
   --black: #fff;
   --white: #000;
-  --theme: #b4a086;
+  --theme: #795a32;
   --theme2: #ffa31a;
   --header: #000;
-  --text: #888888;
-  --text: #888888;
-  --text2: #888888;
+  --text: #454545;
+  --text2: #454545;
   --border: #5a5a5a;
   --border-2: #5a5a5a;
   --bg: #f5f5f5;
@@ -921,9 +920,9 @@ span {
   display: inline-block;
   padding: 0 34px;
   font-family: "Kanit", sans-serif;
-  color: var(--text);
+  color: #ffffff;
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 575px) {
   .theme-btn {
