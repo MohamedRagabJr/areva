@@ -629,7 +629,7 @@
     color: #16212b;
   }
 }
-.white-theme .header-2 .header-right .theme-btn{
+.white-theme .header-2 .header-right .theme-btn {
   background: var(--theme);
 }
 .white-theme .header-2 .header-right .theme-btn:hover {
@@ -3418,11 +3418,6 @@ h5.preloader-text::after {
     rgba(0, 0, 0, 0.55) 100%
   );
   z-index: 1;
-}
-@media (max-width: 1199px) {
-  .hero-2 {
-    background-image: none !important;
-  }
 }
 
 .hero-2 .name p {
