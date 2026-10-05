@@ -25,7 +25,15 @@
 
     <!--<< Bootstrap min.css >>-->
     <!--<< Bootstrap min.css (deferred) >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    </noscript>
     <!--<< All Min Css >>-->
     <link
       rel="stylesheet"

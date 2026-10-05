@@ -33,7 +33,23 @@
 
     <!--<< Critical CSS: Bootstrap + Main (render path) >>-->
     <!--<< Bootstrap min.css (deferred) >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="assets/css/bootstrap.min.css"
+        media="print"
+        onload="this.media = 'all'"
+      />
+      <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      </noscript>
+    </noscript>
     <link
       rel="stylesheet"
       href="assets/css/animate.css"
